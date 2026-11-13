@@ -1,0 +1,12 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pydantic[email]>=2.7
+pydantic-settings[yaml]>=2.3
+sqlalchemy>=2.0
+pypdf>=4.0
+pymilvus>=2.4
+fastembed>=0.3
+redis>=5.0
+openai>=1.40
+pytest>=8.0

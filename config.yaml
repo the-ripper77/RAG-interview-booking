@@ -1,0 +1,28 @@
+# Non-secret settings. Secrets (API keys, URIs with credentials) live in .env.
+app_name: interview-booking-rag
+
+llm:
+  model: qwen3:8b
+  temperature: 0.2
+  max_tokens: 4096
+  max_tool_iterations: 6
+
+embeddings:
+  model: BAAI/bge-small-en-v1.5
+  dimension: 384
+
+vectordb:
+  collection: documents
+
+chunking:
+  chunk_size: 800        # characters
+  chunk_overlap: 150     # characters, fixed strategy only
+
+retrieval:
+  top_k: 5
+
+memory:
+  ttl_seconds: 86400     # chat sessions expire after 24h of inactivity
+
+ingestion:
+  max_file_mb: 20
